@@ -1,0 +1,129 @@
+.node {
+  cursor: pointer;
+}
+
+.overlay{
+    background-color:#EEE;
+}
+
+.node circle {
+  fill: #fff;
+  stroke: black;
+  stroke-width: 0.5px;
+}
+
+.node text {
+  font-size:8px;
+  font-family:sans-serif;
+}
+
+.node percentComplete {
+  font-size:10px;
+  font-family:sans-serif;
+}
+
+.link {
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 0.5px;
+}
+
+.templink {
+  fill: none;
+  stroke: red;
+  stroke-width: 3px;
+}
+
+.ghostCircle.show{
+    display:block;
+}
+
+.ghostCircle, .activeDrag .ghostCircle{
+     display: none;
+}
+
+.hidden {
+        display: none;
+}
+
+.node rect {
+  fill: none;
+   stroke: black;
+   stroke-width: 0.5px;
+}
+
+ul, ol, dl {
+	font-size: 1.5em;
+  list-style-type: none;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+	color: white !important;
+}
+
+.navbar-inverse .navbar-brand {
+	color: white !important;
+	font-size: 1.5em;
+}
+
+.description-container {
+	font-size: 20px;
+}
+
+.large-12 columns {
+	font-size: 18px;
+}
+
+#nodeMeta {
+  align-items: center;
+}
+
+.first-col {
+  float: left;
+}
+
+.second-col {
+  float: right;
+}
+
+.themeColor {
+
+}
+/*
+.tooltip {
+  position: absolute;
+  width: 200px;
+  height: auto;
+  padding: 10px;
+  background: rgba(232, 232, 232, 0.9);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+  pointer-events: none;
+}
+
+.tooltip.hidden {
+  display: none;
+}
+
+.tooltip p {
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Geneva, Arial, sans-serif;
+  font-size: 16px;
+  color: #000;
+  line-height: 20px;
+}
+
+ div.tooltip {
+        position: absolute;
+        width: auto;
+        height: auto;
+        padding: 2px;
+        background: #ffff99;
+        border: solid 1px #aaa;
+        border-radius: 8px;
+ }
+ */

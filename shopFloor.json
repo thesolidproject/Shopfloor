@@ -1,0 +1,271 @@
+[{
+			"name": "S1",
+			"nodeClass": "station1",
+			"quality" : "Q1",
+			"width" : "60",
+			"height" : "75",
+			"x": 501,
+			"y": 838
+		},
+		{
+			"name": "S2",
+			"nodeClass": "station2",
+			"quality" : "Q2",
+			"width" : "60",
+			"height" : "75",
+			"x": 560,
+			"y": 838
+		},
+		{
+			"name": "S3",
+			"nodeClass": "station3",
+			"quality" : "Q4",
+			"width" : "60",
+			"height" : "60",
+			"x": 620,
+			"y": 853
+		},
+		{
+			"name": "S4",
+			"nodeClass": "station4",
+			"quality" : "Q3",
+			"width" : "115",
+			"height" : "75",
+			"x": 882,
+			"y": 838
+		},
+		{
+			"name": "S5",
+			"nodeClass": "station5",
+			"quality" : "Q1",
+			"width" : "115",
+			"height" : "75",
+			"x": 1171,
+			"y": 838
+		},
+		{
+			"name": "S6",
+			"nodeClass": "station6",
+			"quality" : "Q4",
+			"width" : "60",
+			"height" : "60",
+			"x": 1287,
+			"y": 853
+		},
+		{
+			"name": "S7",
+			"nodeClass": "station7",
+			"quality" : "Q2",
+			"width" : "60",
+			"height" : "75",
+			"x": 1347,
+			"y": 838
+		},
+		{
+			"name": "S8",
+			"nodeClass": "station8",
+			"quality" : "Q4",
+			"width" : "60",
+			"height" : "75",
+			"x": 1408,
+			"y": 838
+		},
+		{
+			"name": "S9",
+			"nodeClass": "station9",
+			"quality" : "Q3",
+			"width" : "350",
+			"height" : "75",
+			"x": 500,
+			"y": 745
+		},
+		{
+			"name": "S10",
+			"nodeClass": "station10",
+			"quality" : "Q1",
+			"width" : "550",
+			"height" : "75",
+			"x": 1086,
+			"y": 745
+		},
+			{
+			"name": "S11",
+			"nodeClass": "station11",
+			"quality" : "Q1",
+			"width" : "275",
+			"height" : "40",
+			"x": 1086,
+			"y": 705
+		},
+			{
+			"name": "S12",
+			"nodeClass": "station12",
+			"quality" : "Q4",
+			"width" : "275",
+			"height" : "65",
+			"x": 1086,
+			"y": 640
+		},
+			{
+			"name": "S13",
+			"nodeClass": "station13",
+			"quality" : "Q3",
+			"width" : "275",
+			"height" : "75",
+			"x": 1361,
+			"y": 671
+		},
+			{
+			"name": "S14",
+			"nodeClass": "station14",
+			"quality" : "Q1",
+			"width" : "275",
+			"height" : "31",
+			"x": 1361,
+			"y": 640
+		},
+			{
+			"name": "S15",
+			"nodeClass": "station15",
+			"quality" : "Q2",
+			"width" : "275",
+			"height" : "70",
+			"x": 1086,
+			"y": 570
+		},
+			{
+			"name": "S16",
+			"nodeClass": "station16",
+			"quality" : "Q4",
+			"width" : "275",
+			"height" : "70",
+			"x": 1361,
+			"y": 570
+		},
+			{
+			"name": "S17",
+			"nodeClass": "station17",
+			"quality" : "Q3",
+			"width" : "275",
+			"height" : "70",
+			"x": 1086,
+			"y": 500
+		},
+			{
+			"name": "S18",
+			"nodeClass": "station18",
+			"quality" : "Q1",
+			"width" : "275",
+			"height" : "70",
+			"x": 1361,
+			"y": 500
+		},
+			{
+			"name": "S19",
+			"nodeClass": "station19",
+			"quality" : "Q1",
+			"width" : "550",
+			"height" : "75",
+			"x": 1086,
+			"y": 425
+		},
+			{
+			"name": "S20",
+			"nodeClass": "station20",
+			"quality" : "Q3",
+			"width" : "175",
+			"height" : "140",
+			"x": 500,
+			"y": 605
+		},
+			{
+			"name": "S21",
+			"nodeClass": "station21",
+			"quality" : "Q4",
+			"width" : "87.5",
+			"height" : "75",
+			"x": 675,
+			"y": 670
+		},
+			{
+			"name": "S22",
+			"nodeClass": "station22",
+			"quality" : "Q1",
+			"width" : "230",
+			"height" : "25",
+			"x": 763,
+			"y": 719
+		},
+			{
+			"name": "S23",
+			"nodeClass": "station23",
+			"quality" : "Q2",
+			"width" : "230",
+			"height" : "50",
+			"x": 763,
+			"y": 670
+		},
+			{
+			"name": "S24",
+			"nodeClass": "station24",
+			"quality" : "Q1",
+			"width" : "318",
+			"height" : "65",
+			"x": 675,
+			"y": 605
+		},
+			{
+			"name": "S25",
+			"nodeClass": "station25",
+			"quality" : "Q2",
+			"width" : "318",
+			"height" : "70",
+			"x": 675,
+			"y": 536
+		},
+			{
+			"name": "S26",
+			"nodeClass": "station26",
+			"quality" : "Q1",
+			"width" : "493",
+			"height" : "112",
+			"x": 500,
+			"y": 425
+		},
+		{
+			"name": "S27",
+			"nodeClass": "station27",
+			"quality" : "Q4",
+			"width" : "350",
+			"height" : "120",
+			"x": 148,
+			"y": 264
+		},
+		{
+			"name": "S28",
+			"nodeClass": "station28",
+			"quality" : "Q2",
+			"width" : "246.5",
+			"height" : "120",
+			"x": 498,
+			"y": 264
+		},
+		{
+			"name": "S29",
+			"nodeClass": "station29",
+			"quality" : "Q1",
+			"width" : "246.5",
+			"height" : "120",
+			"x": 745,
+			"y": 264
+		},
+		{
+			"name": "S30",
+			"nodeClass": "station30",
+			"quality" : "Q2",
+			"width" : "375",
+			"height" : "120",
+			"x": 1330,
+			"y": 264
+		}
+]
