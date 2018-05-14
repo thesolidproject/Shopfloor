@@ -1,3 +1,6 @@
+	//This first section of "JSON" is stored in a Javascript Variable in an identical format. 
+	//When this widget is put into production, this  variable should be replace by an applicable .JSON file
+	
 	var json = [{
 			"name": "S1",
 			"nodeClass": "station1",
@@ -270,22 +273,22 @@
 		}
 ];
 
-var create_node_modal_active = false;
+var create_node_modal_active = false;//these variables are used for helping modals (pop ups) appear on the index.html page
 var rename_node_modal_active = false;
 var show_node_details_active = false;
 var node_to_rename = null;
-var admin_mode = false;
+var admin_mode = false;//this boolean variable is used for the admin mode. Other function like edit/delete check this variable for permission
 
-function set_admin_on() {
+function set_admin_on() {//this function sets the the admin variable to either true or false
     admin_mode = true;
     alert("Admin Mode On");
 }
 
-function close_modal() {
+function close_modal() {//closes modals
     $(document).foundation('reveal', 'close');
 }
 
-function create_node() {
+function create_node() {//the create node function will create a single node,
     if(admin_mode) {
         if (create_node_modal_active) {
                 name = $('#CreateNodeName').val();
@@ -297,11 +300,11 @@ function create_node() {
 							'x': 1000,
 							'y': 100
                            };
-			var station = d3.select("#charts")
+			var station = d3.select("#charts")//charts is the protocol called to create the node properly. In the future it should get values from the new node form
             .append("svg:g")
                 .data([ {"x": 1000, "y": 100} ])
                 .attr("class", "newNode")
-               .attr("transform", "translate(" +1000 + "," + 100 + ")")
+               .attr("transform", "translate(" +1000 + "," + 100 + ")")//this is the x and y position on the page.
                 .call(drag)
 				.on('contextmenu', d3.contextMenu(menu))
 				.on('click', function(d){
@@ -345,7 +348,7 @@ function create_node() {
  
 }
 
-var menu = [
+var menu = [//the context meenu is here. Future entries should be added here
                 {
                         title: 'Edit node',
                         action: function(elm, d, i) {
@@ -365,7 +368,7 @@ var menu = [
                         }
                 },
                 {
-                        title: 'Create child node',
+                        title: 'Create Node',
                         action: function(elm, d, i) {
                                 console.log('Create child node');
                                 create_node_parent = d;
@@ -376,7 +379,7 @@ var menu = [
                 }
         ]
 
-  function colorNode(d) {
+  function colorNode(d) {//colors a node based off its JSON data
         if (d.quality == "Q1") {
             result = "deepskyblue"
           } else if (d.quality == "Q2") {
@@ -400,11 +403,8 @@ var drag = d3.behavior.drag()
                 return "translate(" + [ d.x,d.y ] + ")"
             })
         });
-
-
 		
-		
-	function plotNodes()
+	function plotNodes()//this function is called upon loading the widget and will create as many nodes as it needs. It determines this via the amount of node in the JSON data
     { 
 
 	for(var i = 0; i < json.length; i++) {
@@ -413,7 +413,7 @@ var drag = d3.behavior.drag()
             .append("svg:g")
                 .data([ {"x":node.x, "y":node.y} ])
                 .attr("class", node.nodeClass)
-               .attr("transform", "translate(" + node.x + "," + node.y + ")")
+               .attr("transform", "translate(" + node.x + "," + node.y + ")")//coordinates the node will appear at on the page
                 .call(drag)
 				.on('contextmenu', d3.contextMenu(menu))
 				.on('click', function(d){
@@ -423,10 +423,11 @@ var drag = d3.behavior.drag()
 
 
         console.log("make node");
+		/* This can be used if you want nodes to be colored randomly
         var node_color = d3.scale.linear()
             .domain([0, 1])
             .interpolate(d3.interpolateRgb)
-            .range(["#ff0000", "#0000ff"]);
+            .range(["#ff0000", "#0000ff"]);*/
 
         var nodeData = station.append("svg:rect")
                 .attr("class", "nodeRect")
@@ -434,7 +435,7 @@ var drag = d3.behavior.drag()
                 .attr("fill-opacity", .8)
                 .attr("stroke-width", 1)
 				.attr("stroke", "#000")
-				.attr("x", -24)
+				.attr("x", -24)//this x and y is for the text
 				.attr("y", -12)
 				.attr('width', node.width)
 				.attr('height', node.height)
@@ -454,7 +455,7 @@ var drag = d3.behavior.drag()
 		 
 		 
 	}
-	var viewerWidth = $(document).width();
+	var viewerWidth = $(document).width();//sets the size of the svg based of the browser that loads the widget
     var viewerHeight = $(document).height();
 
     //setup svg canvas
@@ -463,7 +464,6 @@ var drag = d3.behavior.drag()
             .attr("width", viewerWidth)
             .attr("height", viewerHeight)
             .attr("id", "charts")
-            //.on("click", clickypie)
             .append("svg:rect")
                 .attr("width", "100%")
                 .attr("height", "100%")
