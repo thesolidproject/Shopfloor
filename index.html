@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
  <head>
-   <title>Shop Floor Visualization</title>
+  <title>Shop Floor Visualization</title>
 	<link rel="stylesheet" href="foundation.css" />
 	<link rel="stylesheet" href="app.css" />
 	<link rel="stylesheet" href="d3-context-menu.css" />
@@ -12,9 +12,6 @@
 	<script src="bootstrap/js/bootstrap.min.js" ></script>
 	<link rel="stylesheet" href="bootstrap/css/bootstrap-toggle.min.css" >
 	<script src="bootstrap/js/bootstrap-toggle.min.js" ></script>
-   <style type="text/css">
-
-   </style>
  </head>
  <body>
  <nav class="navbar navbar-inverse" id="navBar">
@@ -42,7 +39,7 @@
       </ul>
     </div>
   </nav>
-  
+
   <div class="modal fade" id="themeModal" role="dialog">
     <div class="modal-dialog modal-sm">
       <div class="modal-content">
@@ -59,27 +56,6 @@
                 $("#nvColor").change(function(){
                   var clr = $(this).val();
                   $("#navBar").css("background-color",clr);
-                });
-              });
-            </script>
-            <li>Background </li>
-            <li class="themeColor"><input id="bgColor" type="color"></li>
-            <script>
-              $(document).ready(function(){
-                $("#bgColor").change(function(){
-                  var clr = $(this).val();
-                  $("body").css("background-color",clr);
-                  $("rect").css("fill",clr);
-                });
-              });
-            </script>
-            <li>Line</li>
-            <li class="themeColor"><input id="liColor" type="color"></li>
-            <script>
-              $(document).ready(function(){
-                $("#liColor").change(function(){
-                  var clr = $(this).val();
-                  $(".link").css("stroke",clr);
                 });
               });
             </script>
@@ -112,8 +88,45 @@
     <form id="RenameNodeForm">
       <div class="row">
         <div class="large-12 columns">
-          <label>Node name
+          <label>Node Name
             <input type="text" class="inputName" id='RenameNodeName' placeholder="node name" />
+          </label>
+          <label>Node Cost
+            <input type="text" class="inputName" id='EditNodeCost' placeholder="node name" />
+          </label>
+          <label>Node Description
+            <input type="text" class="inputName" id='EditNodeDescription' placeholder="node name" />
+          </label>
+            <br>
+          <label>Status
+            <select>
+              <option id="EditActive" value="active">Active</option>
+              <option id="cUnactive" value="unactive">Unactive</option>
+            </select>
+          </label>
+            <br>
+          <label>Rev
+            <input type="text" class="inputName" id='EditRev' placeholder="node name" />
+          </label>
+          <label>Iteration
+            <input type="text" class="inputName" id='EditIteration' placeholder="node name" />
+          </label>
+          <label>Percent Complete
+            <input type="text" class="inputName" id='EditPercentageComplete' placeholder="percentge complete" />
+          </label>
+            <br>
+          <label>Actual Hours
+            <input type="text" class="inputName" id='EditActualHours' placeholder="actual hours" />
+          </label>
+          <label>Planned Hours
+            <input type="text" class="inputName" id='EditPlannedHours' placeholder="planned hours" />
+          </label>
+            <br>
+          <label>Start Date
+            <input type="text" class="inputName" id='EditStarDate' placeholder="start date" />
+          </label>
+          <label>End Date
+            <input type="text" class="inputName" id='EditEndDate' placeholder="end date" />
           </label>
         </div>
       </div>
@@ -176,15 +189,15 @@
     </div>
     <a class="close-reveal-modal" aria-label="Close">&#215;</a>
   </div>
-  
+
 	<div id="shopfloor-container"></div>
 	<script src="d3.v3.min.js"></script>
    <script src="shopfloor.js"></script>
    <script src="d3-context-menu.js"></script>
     <!--<script src="underscore-min.js"></script>-->
   <script src="fastclick.js"></script>
-  <script src="foundation.min.js"></script> 
-    
+  <script src="foundation.min.js"></script>
+
    <script>
 	$('document').ready(function(){
     $(document).foundation();
@@ -205,8 +218,6 @@
     });
     var floorJSON = d3.json("shopFloor.json", plotNodes);
     });
-	
-    
    </script>
  </body>
 </html>
