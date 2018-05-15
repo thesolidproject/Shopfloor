@@ -77,7 +77,7 @@
           <h3 class="modal-title">Key</h3>
 	       </div>
 	       <div class="modal-body">
-           <img src="key.png">
+           <img src="sf_key.png">
 	       </div>
       </div>
     </div>
@@ -135,7 +135,7 @@
           &nbsp;
         </div>
         <div class="large-4 columns">
-          <a href="#" class="button info" onclick="close_rename_node_modal()">Cancel</a>
+          <a href="#" class="button info" onclick="close_modal()">Cancel</a>
           <a href="#" class="button success" onclick="rename_node()">Save</a>
         </div>
       </div>
@@ -169,9 +169,9 @@
   <div id="ShowNodeDetailsModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
     <h2 id="modalTitle">Node Details</h2>
     <div class="description-container">
-      <span class="modal-nodeID"> Node Name: </span><br>
-      <span class="modal-nodeCost">Node Cost: </span><br>
-      <span class="modal-description">Node Description: </span><br><br>
+      <span class="modal-nodeID"> Node Name: Testing</span><br>
+      <span class="modal-nodeCost">Node Cost: C3</span><br>
+      <span class="modal-description">Node Description: Test</span><br><br>
     </div>
     <div class="nodeMeta">
       <ul class="first-col">
@@ -192,13 +192,13 @@
 
 	<div id="shopfloor-container"></div>
 	<script src="d3.v3.min.js"></script>
-   <script src="shopfloor.js"></script>
-   <script src="d3-context-menu.js"></script>
-    <!--<script src="underscore-min.js"></script>-->
+  <script src="shopfloor.js"></script>
+  <script src="d3-context-menu.js"></script>
+  <!--<script src="underscore-min.js"></script>-->
   <script src="fastclick.js"></script>
   <script src="foundation.min.js"></script>
 
-   <script>
+  <script>
 	$('document').ready(function(){
     $(document).foundation();
     $(document).on('opened', '[data-reveal]', function () {
