@@ -35,7 +35,7 @@ placeholder.js       | Javascript library for the placeholder attribute. **Shoul
 shopfloor.js         | JavaScript development file.
 underscore-min.js    | JavaScript library which provides utility functions for common programming tasks. **Should not be edited**
 shopFloor.json       | JSON data for floor.
-key.png              | PNG file for key.
+sf_key.png           | PNG file for shop floor key.
 
 ### Included Folders
 
@@ -44,5 +44,4 @@ In addition to the files within the project, there are 3 folders that also requi
 Folder Name   | Description
 ------------- | -------------------------------------------------------------------------------------------------------------------------------------------
 bootstrap/    | Bootstrap library. More info can be found [here](https://getbootstrap.com/docs/4.1/getting-started/introduction/).
-node_modules/ | NPM packages required for the project. More info can be found [here](https://docs.npmjs.com/files/folders).
 manuals/      | User and development manuals.
